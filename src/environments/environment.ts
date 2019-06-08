@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig : {
+    apiKey: "AIzaSyC93ej6TpSiiEFwvmOw5QYhLCjipjpqBhM",
+    authDomain: "virutal-tpv.firebaseapp.com",
+    databaseURL: "https://virutal-tpv.firebaseio.com",
+    projectId: "virutal-tpv",
+    storageBucket: "virutal-tpv.appspot.com",
+    messagingSenderId: "645353407398"
+  }
 };
 
 /*

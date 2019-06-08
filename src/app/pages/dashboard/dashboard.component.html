@@ -1,0 +1,162 @@
+<div class="row">
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex no-block">
+          <div class="m-r-20 align-self-center">
+            <span class="lstick m-r-20"></span
+            ><i style="font-size: 45px" class="mdi mdi-database-minus"></i>
+          </div>
+          <div class="align-self-center">
+            <h2 class="m-t-0">Limpiar</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-body">
+        <div
+          class="d-flex no-block"
+          (click)="activarLuces()"
+          style="cursor: pointer"
+        >
+          <div class="m-r-20 align-self-center">
+            <span class="lstick m-r-20"> </span>
+            <i *ngIf="lucesEncendidas" style="font-size: 45px" class="mdi mdi-lightbulb-on"> </i>
+            <i *ngIf="!lucesEncendidas" style="font-size: 45px;" class="mdi mdi-lightbulb-outline"></i>
+          </div>
+          <div class="align-self-center">
+            <h2 class="m-t-0">Luces</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-body">
+        <div
+          class="d-flex no-block"
+          (click)="activarSistema()"
+          style="cursor: pointer"
+        >
+          <div class="m-r-20 align-self-center">
+            <span class="lstick m-r-20"> </span>
+            <i style="font-size: 45px" class="mdi mdi-power"> </i>
+            <i
+              style="font-size: 45px; display: none"
+              class="mdi mdi-lightbulb-outline"
+            ></i>
+          </div>
+          <div class="align-self-center">
+            <h2 *ngIf="!sistemaActivo" class="m-t-0">Activar</h2>
+            <h2 *ngIf="sistemaActivo" class="m-t-0">Desactivar</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex no-block">
+          <div class="m-r-20 align-self-center">
+            <span class="lstick m-r-20"></span
+            ><i style="font-size: 45px" class="mdi mdi-file-document"></i>
+          </div>
+          <div class="align-self-center">
+            <!-- <h6 class="text-muted m-t-10 m-b-0"></h6> -->
+            <h2 class="m-t-0">Reportes</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">Pin de seguridad</h3>
+    <h5 class="card-subtitle">
+      Copia éste pin<code>{{ pin }}</code> para poder acceder a .....
+    </h5>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Zonas</th>
+            <th>Sensores</th>
+            <th>Detalles</th>
+            <th class="text-nowrap">Capturas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zona 1</td>
+            <td>
+              <ul>
+                <li>- SHUM</li>
+                <li>- SMAG</li>
+                <li>- SMOV</li>
+              </ul>
+            </td>
+            <td>SHUM Activado el 25/01/2019 13:15:52</td>
+            <td class="text-nowrap">
+              <div class="col-lg-3 col-md-6 m-b-20">
+                <img
+                  style="width: 150px"
+                  src="assets/images/big/img1.jpg"
+                  class="img-responsive radius"
+                />
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Zona 2</td>
+            <td>
+              <ul>
+                <li>- SHUM</li>
+                <li>- SMAG</li>
+                <li>- SMOV</li>
+              </ul>
+            </td>
+            <td>SHUM Activado el 25/01/2019 13:15:52</td>
+            <td class="text-nowrap">
+              <div class="col-lg-3 col-md-6 m-b-20">
+                <img
+                  style="width: 150px"
+                  src="assets/images/big/img1.jpg"
+                  class="img-responsive radius"
+                />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Zona 3</td>
+            <td>
+              <ul>
+                <li>- SHUM</li>
+                <li>- SMAG</li>
+                <li>- SMOV</li>
+              </ul>
+            </td>
+            <td>SHUM Activado el 25/01/2019 13:15:52</td>
+            <td class="text-nowrap">
+              <div class="col-lg-3 col-md-6 m-b-20">
+                <img
+                  style="width: 150px"
+                  src="assets/images/big/img1.jpg"
+                  class="img-responsive radius"
+                />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
